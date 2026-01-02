@@ -1,0 +1,91 @@
+h3 {
+    margin: 0rem;
+}
+
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    gap: 2rem;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 50%;
+    background: #c7bbbb14;
+    padding: 3rem;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 15px #0000004d;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+form div input {
+    border-radius: 6px;
+    border: 1px solid rgb(139, 131, 131);
+    padding: 8px 3px;
+    background-color: transparent;
+}
+
+form div.button {
+    display: block;
+}
+
+.btnss {
+    flex-direction: row;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: 1px solid rgb(158, 145, 145);
+    background-color: rgb(158, 145, 145);
+    color: #fff;
+    transition: 0.1s all;
+    width: fit-content;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 1px solid rgb(158, 145, 145);
+    color: rgb(158, 145, 145);
+}
+
+table {
+    background-color: rgba(158, 145, 145, 0.726);
+    padding: 1rem;
+    width: 50%;
+    color: white;
+    border-radius: 0.5rem;
+    white-space: nowrap;
+}
+
+@media (max-width: 576px) {
+    section {
+        flex-direction: column;
+    }
+
+    form {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    table {
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+    }
+
+    tr {
+        white-space: nowrap;
+    }
+}
